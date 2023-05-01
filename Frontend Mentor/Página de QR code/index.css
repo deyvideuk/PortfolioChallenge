@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clear{
+    clear: both;
+}
+
+/* BODY'S CSS */
+body{
+    background-color: hsl(212, 45%, 89%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* BODY'S CSS */
+
+/* QR-CODE'S CSS */
+#qr-code{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    padding: 5px;
+    /* border: 1px solid black; */
+}
+    .frontCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 15px 15px 40px 15px;
+        border-radius: 20px;
+        /* border: 1px solid black; */
+        box-shadow: 1px 1px 10px #ccc, -1px -1px -10px #ccc;
+        background-color: white;
+    }
+    .frontCard .qr{
+        width: max-content;
+        height: max-content;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .frontCard .qr img{
+        width: 300px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+
+    .qrDescription{
+        width: 300px;
+        text-align: center;
+    }
+    .qrDescription .title{
+        margin: 5px 0 10px 0;
+        color: hsl(218, 44%, 22%);
+    }
+    .qrDescription .description{
+        text-align: center;
+        color: hsl(220, 15%, 55%);
+    }
+/* QR-CODE'S CSS */
+
+/* ATTRIBUTION'S CSS */
+#attribution{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    transition: 1s;
+    /* border: 1px solid red; */
+}
+
+#attribution > span{
+    width: max-content;
+    float: right;
+    margin-right: 5px;
+    font-size: 1rem;
+    transition: 1s;
+    /* border: 1px solid green; */
+}
+/* ATTRIBUTION'S CSS */
+
+/* MEDIA QUERY'S CSS */
+@media screen and (max-width: 375px){
+#attribution span{
+    width: 70%;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    justify-content: right;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    transition: 1s;
+}
+}
+/* MEDIA QUERY'S CSS */
