@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
+    transition: 1s;
 }
 .clear{
     clear: both;
@@ -104,7 +105,7 @@ body{
     position: relative;
     padding: 10px 20px;
     border-radius: 40px;
-    width: 600px;
+    width: 45%;
     border: 1px solid #c7c7c7;
     margin-bottom: 20px;
 }
@@ -118,7 +119,8 @@ body{
     top: 17px;
 }
 .area-input .input{
-    width: max-content;
+    width: 70%;
+    /* border: 1px solid red; */
 }
 .area-input .input > input{
     position: relative;
@@ -130,22 +132,18 @@ body{
     font-size: 1.2rem;
 }
 .area-input .icon-teclado{
-    position: absolute;
+    position: relative;
     width: max-content;
-    left: 450px;
-    top: 13px;
 }
 .area-input .icon-fone{
-    position: absolute;
+    position: relative;
     width: max-content;
-    left: 490px;
-    top: 13px;
+    left: 20px;
 }
 .area-input .icon-camera{
-    position: absolute;
+    position: relative;
     width: max-content;
-    left: 530px;
-    top: 13px;
+    left: 40px;
 }
 
 .area-sorte{
@@ -153,15 +151,14 @@ body{
     flex-direction: row;
     width: max-content;
     /* border: 1px solid red; */
+    gap: 30px;
 }
 .btn-sorte{
     display: flex;
     justify-content: center;
     align-items: center;
     /* border: 1px solid green; */
-}
-.btn-sorte:first-child{
-    margin-right: 30px;
+    
 }
 .btn-sorte a{
     padding: 10px 15px;
@@ -174,10 +171,43 @@ body{
     padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 0 0 1px #c7c7c7;
+
 }
 
 #rodape{
     position: fixed;
     bottom: 0;
-    border: 2px solid black;
+    margin-bottom: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    transition: 1s;
+    /* border: 2px solid black; */
+}
+
+
+@media screen and (max-width: 800px){
+    .area-input{
+        width: 80%;
+        transition: 1s;
+    }
+    .area-input #pesquisa{
+        /* border: 1px solid; */
+        width: 100%;
+        left: 0;
+        transition: 1s;
+    }
+    .input{
+        width: 50% !important;
+        /* border: 1px solid; */
+        transition: 1s;
+    }
+    .area-sorte{
+        gap: 3px;
+    }
+    #rodape{
+        padding: 0 30px;
+        margin-bottom: 20px;
+        transition: 1s;
+    }
 }
